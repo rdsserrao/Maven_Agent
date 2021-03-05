@@ -15,7 +15,7 @@ pipeline {
                 }
                 stage ('Criar Imagem') {
                     steps {
-                        sh 'docker build -t $Imagem .'
+                        sh ' docker build -t $Imagem .'
                     }   
                 } 
                 stage ('Criar Contentor') {
